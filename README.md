@@ -15,4 +15,4 @@ Installed Odoo v11.0
 
 ## Instances
 
-* [https://facto.coopdevs.org]()
+* [Facto Coopdevs](https://facto.coopdevs.org)
