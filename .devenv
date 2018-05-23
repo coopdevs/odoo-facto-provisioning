@@ -1,0 +1,10 @@
+# Vars to use in lxc-create
+NAME="odoo-facto"
+DISTRIBUTION="ubuntu"
+RELEASE="xenial"
+ARCH="amd64"
+HOST="local.facto.odoo"
+PROJECT_NAME="odoo-facto"
+PROJECT_PATH="${PWD%/*}/$PROJECT_NAME"
+DEVENV_USER="odoo"
+DEVENV_GROUP="odoo"

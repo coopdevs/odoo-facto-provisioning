@@ -1,0 +1,9 @@
+[production]
+facto.coopdevs.org
+
+[dev]
+local.facto.odoo
+
+[odoo_servers:children]
+dev
+production

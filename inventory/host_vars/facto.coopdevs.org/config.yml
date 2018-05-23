@@ -1,0 +1,19 @@
+---
+system_administrators:
+  - name: daniel
+    ssh_key: "../pub_keys/daniel.pub"
+    state: present
+  - name: enrico
+    ssh_key: "../pub_keys/enrico.pub"
+    state: present
+
+developers: []
+
+# Let's Encrypt conf
+certificate_authority_email: "info@coopdevs.org"
+
+# Set 'development_environment' to "true" to skip SSL and nginx tasks
+development_environment: false
+
+# Comma-separated list of core modules
+odoo_install_core_modules: "base,l10n_es,account,project"
