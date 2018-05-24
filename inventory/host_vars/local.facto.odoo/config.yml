@@ -19,4 +19,6 @@ certificate_authority_email:
 development_environment: true
 
 # Comma-separated list of core modules
-odoo_core_modules: "base,l10n_es,account,project"
+odoo_install_core_modules: "base,l10n_es,account,project"
+
+database_name: odoo-no-data
