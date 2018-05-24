@@ -18,8 +18,8 @@
 
     - role: coopdevs.certbot_nginx
       vars:
-          domain_name: "{{ inventory_hostname }}"
-          letsencrypt_email: "{{ certificate_authority_email }}"
+        domain_name: "{{ inventory_hostname }}"
+        letsencrypt_email: "{{ certificate_authority_email }}"
       when: not development_environment
 
     - role: jdauphant.nginx
