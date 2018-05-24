@@ -17,3 +17,5 @@ development_environment: false
 
 # Comma-separated list of core modules
 odoo_install_core_modules: "base,l10n_es,account,project"
+
+database_name: odoo
