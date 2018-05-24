@@ -16,6 +16,6 @@ certificate_authority_email: "info@coopdevs.org"
 development_environment: false
 
 # Comma-separated list of core modules
-odoo_install_core_modules: "base,l10n_es,account,project"
+odoo_install_core_modules: "base,l10n_es,account,project,analytic,sale"
 
 database_name: odoo
