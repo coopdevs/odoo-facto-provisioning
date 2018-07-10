@@ -10,7 +10,7 @@ This repository stores hosts informations and related variables for this specifi
    ```
 3. Run `ansible-playbook` command pointing to the `inventory/hosts` file of this repository:
    ```
-   ansible-playbook playbooks/provision.yml -i ../odoo-femprocomuns-provisioning/inventory/hosts --ask-vault-pass --limit=dev
+   ansible-playbook playbooks/provision.yml -i ../odoo-facto-provisioning/inventory/hosts --ask-vault-pass --limit=dev
    ```
 
 ## Odoo Core Modules
