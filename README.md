@@ -1,10 +1,17 @@
-# Ansible script to provision and deploy Odoo for FACTO Assessors
+# Ansible inventories
+This repository stores hosts informations and related variables for this specific instance of Odoo.
 
-These are [Ansible](http://docs.ansible.com/ansible/) playbooks (scripts) for managing an [Odoo](https://github.com/odoo/odoo) server.
+## Requirements
 
-Using the schema of [odoo-provisioning](https://gitlab.com/femprocomuns/odoo-provisioning/) we create a provisioning repository to provision and deploy the customizations of this project.
-
-Installed Odoo v11.0
+1. Clone this repo and [odoo-provisioning](https://gitlab.com/femprocomuns/odoo-provisioning) in the same directory
+2. Go to `odoo-provisioning` directory and install Ansible dependencies:
+   ```
+   ansible-galaxy -r requirements.yml
+   ```
+3. Run `ansible-playbook` command pointing to the `inventory/hosts` file of this repository:
+   ```
+   ansible-playbook playbooks/provision.yml -i ../odoo-facto-provisioning/inventory/hosts --ask-vault-pass --limit=dev
+   ```
 
 ## Odoo Core Modules
 
@@ -12,6 +19,8 @@ Installed Odoo v11.0
 - [Project](https://github.com/odoo/odoo/tree/11.0/addons/project)
 - [l10n_es](https://github.com/odoo/odoo/tree/11.0/addons/l10n_es)
 - [account](https://github.com/odoo/odoo/tree/11.0/addons/account)
+- [analytic]()
+- [sale]()
 
 ## Instances
 

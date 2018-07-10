@@ -17,8 +17,3 @@ certificate_authority_email:
 
 # Set 'development_environment' to "true" to skip SSL and nginx tasks
 development_environment: true
-
-# Comma-separated list of core modules
-odoo_install_core_modules: "base,l10n_es,account,project"
-
-database_name: odoo
