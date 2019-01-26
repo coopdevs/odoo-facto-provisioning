@@ -1,4 +1,7 @@
 ---
+# Use python3 interpreter
+ansible_python_interpreter: "/usr/bin/python3"
+
 odoo_user: odoo
 odoo_edition: oca
 odoo_core_modules: "base,l10n_es,account,project,analytic,sale"
