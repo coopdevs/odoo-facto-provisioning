@@ -89,6 +89,8 @@ This repository stores hosts informations and related variables for this specifi
 - phone_validation"
 
 ## Odoo Community Modules
+
+> Using the `requirements.txt` file in this repository
 - account_banking_mandate
 - account_banking_pain_base
 - account_banking_sepa_credit_transfer
