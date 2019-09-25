@@ -1,0 +1,26 @@
+---
+system_administrators:
+  - name: daniel
+    ssh_key: "{{ inventory_dir }}/../pub_keys/daniel.pub"
+    state: present
+  - name: enrico
+    ssh_key: "{{ inventory_dir }}/../pub_keys/enrico.pub"
+    state: present
+  - name: ferran
+    ssh_key: "{{ inventory_dir }}/../pub_keys/ferran.pub"
+    state: present
+
+developers: []
+
+# Let's Encrypt conf
+certificate_authority_email: "info@coopdevs.org"
+
+# Set 'development_environment' to "true" to skip SSL and nginx tasks
+development_environment: false
+
+# Disable backups
+backups_role_enabled: false
+
+# HTTP server settings
+odoo_role_odoo_http_interface: "127.0.0.1"
+odoo_role_odoo_proxy_mode: true

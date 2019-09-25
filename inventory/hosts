@@ -1,9 +1,13 @@
 [production]
 facto.coopdevs.org
 
+[next]
+facto2.coopdevs.org ansible_host=116.203.28.239
+
 [dev]
 local.facto.odoo
 
 [odoo_servers:children]
 dev
 production
+next
